@@ -1,0 +1,76 @@
+body{
+    padding: 10px 50px;
+}
+.formdesign{
+    font-size: 20px;
+}
+.formdesign input{
+    width: 50%;
+    padding: 12px 20px;
+    border: 1px solid grey;
+    margin: 14px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.formerror{
+    color: red;
+}
+
+.button, #button1{
+     border-radius: 9px;
+     width: 100px;
+     height: 35 px;
+     font-size: 25px;
+     margin: 22px 20px;
+     
+}
+
+p{
+    height: 150px;
+    width: 50%;
+    background-color: bisque;
+    border: 1px solid black;
+}
+
+/*function claerErrors(){
+    errors = document.getElementsByClassName('formerror');
+    for(Let item of errors){
+        item.innerHTML ="";
+    }
+}*/
+
+/*   if(name.length == 0){
+        seterror("name", "*Length of name cannot be zero");
+        returnval= false
+    }
+    return returnval;
+
+      
+
+
+    // function output(id,print){
+//     namees = document.getElementById(id);
+//     namees.getElementsByClassName('names')[0].innerHTML = print; 
+
+
+    // document.write("your name is = " + name);  
+    // document.write("your email is = " + email); 
+    // document.write("your phone is = " + phone); 
+    // document.write("your institute is = " + institute); 
+    // document.write("your PAN NO is = " + panNo );   
+//}
+
+
+     
+
+
+function print(){
+    var name = document.getElementById("name").value;
+    document.write("name:"+name);
+}
+
+
+}
+
+    */

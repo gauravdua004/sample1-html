@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myForms</title>
+    <link rel="stylesheet" href="formstyle.css">
+
+</head>
+<body>
+    <div>
+    <h2>Enter basic details</h2>
+    <form name="myForm"  method="post"> <!---->
+        <div class="formdesign" id="name">  
+            Name: <input type="text" name="fname" id="name1" class="1stform">   <b><span class="formerror" ></span></b>
+        </div>
+
+        <div class="formdesign" id="email">
+            E-mail: <input type="email" name="femail" id="email1" class="1stform">     <b><span class="formerror" ></span></b>
+        </div>
+
+        <div class="formdesign" id="phone">
+            Phone: <input type="phone" name="fphone" id="phone1" class="1stform">      <b><span class="formerror" ></span></b>
+        </div>
+
+        <div class="formdesign" id="institute">
+            Institute: <input type="text" name="finstitute" id="institute1" class="1stform">        <b><span class="formerror" ></span></b>
+        </div>
+
+        <div class="formdesign" id="panNo">
+            PAN Number: <input type="text" name="fpanNo" id="panNo1" class="1stform">    <b><span class="formerror" ></span></b>
+        </div>
+
+        <input type="button" value="Submit" id="button1" onclick="printoutput()">       
+        <input class="button" type="reset" value="Clear">
+    </form>
+    <p class="output" id="output1">  </p>
+</div>
+    <script src="formjs.js"></script>
+
+</body>
+</html>
