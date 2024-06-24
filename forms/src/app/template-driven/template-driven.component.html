@@ -1,0 +1,36 @@
+<p>template-driven works!</p>
+<form #addDetails="ngForm" (submit)="generalDetails(addDetails)" (ngSubmit)="onSubmit()" novalidate>
+
+    <div>
+        <label>First Name</label>
+        <input type="text" [(ngModel)]="firstname" name="firstname" required minlength="5"/></div>
+
+    <div>
+        <label>First Name</label>
+        <input type="text" [(ngModel)]="lastname" name="lastname" /></div>
+
+    <div>
+        <label>Gender </label>
+        <select [(ngModel)]="gender" name="gender">
+            <option value="1">male</option>
+            <option value="2">female</option>
+        </select></div>
+
+    <div>
+        <label>Roll Number</label>
+        <input type="number" [(ngModel)]="rollno" name="rollno" /></div>
+
+    <div>
+        <label>Description</label>
+        <textarea [(ngModel)]="description" name="description"></textarea></div>
+
+    <div>
+        <input type="checkbox" [(ngModel)]="terms" name="terms" required/>Accept terms and conditions</div>
+
+    <button type="submit" [disabled]="!addDetails.valid">Submit Deatils</button>
+    <button class="btn btn-link" (click)="resetForm(addDetails)"> Reset Form </button>
+    <button class="btn btn-link" (click)="loadValue(addDetails)"> Set Values </button>
+
+    
+</form>
+<div>{{firstname}}</div>

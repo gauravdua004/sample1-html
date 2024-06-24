@@ -1,0 +1,25 @@
+<p>contact works!</p>
+
+<form [formGroup]="addContactForm">
+  
+        <label>contact Name    </label>
+        <input type="text" formControlName="contactName"><br>
+        <div class="error" *ngIf="addContactForm.get('contactName').hasError('required') && addContactForm.get('contactName').touched">contact name is touched</div>
+        <div class="error" *ngIf="addContactForm.get('contactName').hasError('minlength') && addContactForm.get('contactName').touched">contact name is of 10 letters</div>
+
+        <label>contact Type    </label>
+        <input type="text" formControlName="contactType"><br>
+   
+        <label>contact Description    </label>
+        <textarea formControlName="contactDescription"></textarea><br>
+
+        <label>contact number    </label>
+        <input type="number" formControlName="contactNumber"><br>
+    
+    
+    <button (click)="addContact()" [disabled]="!addContactForm.valid">Add Contact</button>
+    <button (click)="reset()" >Reset Form</button>
+
+    
+
+</form>
